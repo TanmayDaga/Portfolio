@@ -48,25 +48,39 @@ html,body{
     flex-direction: row;
     justify-content: space-between;
     background-color: #E3F4F4;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+
+
+}
+
+#bioImage-div{
+    margin: 2%;
+    border-radius: 100%;
+    width: 20%;
 }
 #bio-image{
      aspect-ratio: 1/1;
-     margin: 4%;
+   
 
+    height: 100%;
      border-radius: 100%;
 }
-
-#bio-data{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 10%;
-    width: 50%;
-
+#stats-image{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 80%;
 }
 
+#uselang-image{
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 80%;
+
+
+}
 #projects{
     height: 40%;
     width: 100%;
@@ -75,6 +89,7 @@ html,body{
     flex-direction: row;
 }
 .project-outer-container{
+    overflow: hidden;
     width: 50%;
    
     margin: 2%;
@@ -96,7 +111,7 @@ html,body{
     justify-content: center;
     align-items: center;
     background-color: #C4DFDF;
-    z-index:1;
+
     border-top: 4px solid #7cb4b4;
     transition: height 1s;
     
@@ -110,8 +125,62 @@ html,body{
 
 
 .project-outer-container:hover > .project-inner-container{
-    height: 40%;
+    height: 20%;
 }
+
+#python-projects{
+    width: 100%;
+    display: table;
+}
+
+.C2j3L{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Individual projects classes */
+.dC3nv{
+    width: 33.33%;
+    height: 20px;
+    padding: 4%;
+}
+
+
+
+@media (max-width:840px) {
+    #bio{
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+        overflow: scroll;
+    }
+
+    #bio-image{
+        height: auto;
+        width: 100%;
+        
+    }
+    #projects{
+        flex-direction: column;
+        overflow: scroll;
+        width: 100%;
+        height: 40%;
+        border: 2px solid red;
+    }
+    #stats-image{
+        width: 80%;
+    }
+    #uselang-image{
+        width: 80%;
+    }
+    .project-outer-container{
+        height: 50%;
+        width: 100%;
+    }
+    
+}
+
+
 
 
 

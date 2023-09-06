@@ -3,58 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Tanmay Daga</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <script src="scripts/index.js"></script>
+    <script src="data/projects.js"></script>
+    <script src="scripts/index.js" defer></script>
+    
   </head>
   <body>
+
+    <!-- NavBAr ---------------------------- -->
     <div id="navbar">
       <div id="home-navbar">Home</div>
       <div id="spacer"></div>
 
       <ul id="other-options-list">
-        <li class="menu-items-list">About</li>
-        <li class="menu-items-list">My Work</li>
+       
+        <li class="menu-items-list" onclick="window.open('https://github.com/TanmayDaga?tab=repositories')">My Work</li>
       
       </ul>
     </div>
 
+    <!-- Bio -------------------------- -->
     <div id="bio">
 
-      <img src="./images/bioImage.jpeg" alt="Image not found" id="bio-image" />
 
-      <div id="bio-data">
+      <div id="bioImage-div">
+        <img src="./images/bio.png" alt="Image not found" id="bio-image" loading="lazy"/>
+
+      </div>
+     
+
         <img
           src="https://github-readme-stats.vercel.app/api?username=TanmayDaga&show=reviews,prs&theme=radical"
           alt="Image not found"
+          id="stats-image"
         />
         <img
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=TanmayDaga"
           alt="Image not found"
+          id="uselang-image"
         />
-      </div>
+  
     </div>
 
 
+    <!-- Projects --------------- -->
+
     <div id="projects">
 
-      <div class="project-outer-container">
+      <div class="project-outer-container"  >
+        
+        <!-- The order is so that flex is column reverse -->
         
          <div class="project-inner-container">
 
           
-          <img src="./images/python-logo.png" alt="" class="mcDKR">
+          <img src="./images/python-logo.png" alt="No image found" class="mcDKR">
 
          </div>
+
+
+        <div id="python-projects" class="C2j3L" >
+          
+          
+        </div>
       </div>
 
       <div class="project-outer-container">
+        
 
-        <div class="project-inner-container">
-          <img src="./images/android-logo.png" alt="" class="mcDKR">
+        <div class="project-inner-container" >
+          <img src="./images/android-logo.png" alt="No image found" class="mcDKR">
 
         </div>
+
+          <div id="android-projects" class="C2j3L">
+      
+          </div>
         </div>
+
+        
         
       </div>
 
