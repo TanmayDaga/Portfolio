@@ -1,4 +1,11 @@
+
+
 *{
+    --primary-color:#0F0F0F;
+    --secondary-color:#232D3F;
+    --accent-color-one:#005B41;
+    --accent-color-two:#008170;
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,15 +13,91 @@
 }
 html,body{
     height: 100%;
-    background-color: #F8F6F4;
+    background-color:var(--primary-color);
+    color: var(--accent-color-two);
     
+}
 
- 
+/* Splash Screen -------------------------------*/
+#body-splash{
+    
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform();
+    animation: hide-splash-screen 1.5s linear 9s normal forwards;
+}
+#splash-div-background{
+    position: relative;
+    width: 18rem;
+    height: 20%;
+    padding-left: 4px;
+    border-radius: 4%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 
 }
+.splash-text{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    text-align: center;
+
+    border-right: 2px solid transparent;
+}
+
+#splash-text-span-one{
+   
+    animation: typewriter 4s steps(79) normal both,
+               
+             splash-text-blink-cursor-animation 500ms steps(79) infinite both,
+             border-final-color 0s linear 4s  normal forwards;
+
+}
+#splash-text-span-two{
+    animation: typewriter 4s steps(79) 4s normal both,
+             splash-text-blink-cursor-animation 500ms steps(44) 4s infinite both,
+             border-final-color 0s linear 8s  normal forwards;
+        
+}
+@keyframes typewriter{
+    from{width: 0%;}
+    to{width: 100%;}
+  }
+@keyframes splash-text-blink-cursor-animation {
+    from{
+        border-right-color: transparent;
+    }
+    to{
+        border-right-color: red;
+    }
+}
+@keyframes border-final-color {
+    from{}
+    to{border-right-color: transparent;}
+}
+
+@keyframes hide-splash-screen {
+    from{height: 100%;}
+    to{
+        height: 0%;
+    }
+}
+
+/* SplashScreen Ends here -----------------*/
+
+/* Navbar starts here ----------------- */
 #navbar{
     height: 7%;
-    background-color: #E3F4F4;
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,8 +110,13 @@ html,body{
     line-height: 50%;
     font-size: 30px;
     margin-left: 1%;
+    transition: 100ms ease;
     
 }
+#home-navbar:hover{
+    transform: scale(.8);
+}
+
 
 #other-options-list{
     display: flex;
@@ -40,18 +128,29 @@ html,body{
     list-style: none;
     
 }
+.menu-items-list{
+    transition: 100ms ease;
+}
+
+.menu-items-list:hover{
+    transform: scale(.8);
+}
+
+
+/* Navbar -ends -------------------- */
+
+
+
 #bio{
-    
+
     height: 40%;
     margin-top: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #E3F4F4;
+    background-color: var(--secondary-color);
     margin-left: 1%;
     margin-right: 1%;
-    
-
 
 }
 
@@ -154,12 +253,15 @@ html,body{
     
 }
 .social-images{
-    height: 20px;
-    width: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    height: 15px;
+    width: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: 50ms ease;
 }
-
+.social-images:hover{
+    transform: scale(.7);
+}
 
 
 @media (max-width:840px) {
