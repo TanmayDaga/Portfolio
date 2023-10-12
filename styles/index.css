@@ -29,7 +29,7 @@ html,body{
     justify-content: center;
     align-items: center;
     transition: transform();
-    animation: hide-splash-screen 1.5s linear 9s normal forwards;
+    animation: hide-splash-screen 1.5s linear 4.5s normal forwards;
 }
 #splash-div-background{
     position: relative;
@@ -67,16 +67,16 @@ html,body{
 
 #splash-text-span-one{
    
-    animation: typewriter 4s steps(79) normal both,
+    animation: typewriter 2s steps(79) normal both,
                
              splash-text-blink-cursor-animation 500ms steps(79) infinite both,
-             border-final-color 0s linear 4s  normal forwards;
+             border-final-color 0s linear 2s  normal forwards;
 
 }
 #splash-text-span-two{
-    animation: typewriter 4s steps(79) 4s normal both,
-             splash-text-blink-cursor-animation 500ms steps(44) 4s infinite both,
-             border-final-color 0s linear 8s  normal forwards;
+    animation: typewriter 2s steps(79) 2s normal both,
+             splash-text-blink-cursor-animation 500ms steps(44) 2s infinite both,
+             border-final-color 0s linear 4s  normal forwards;
         
 }
 @keyframes typewriter{
