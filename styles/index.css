@@ -55,6 +55,15 @@ html,body{
 
     border-right: 2px solid transparent;
 }
+@media all and (max-width:840px) {
+    .splash-text{
+
+        font-size: small;
+    }
+    #splash-div-background{
+        width: 17rem;
+    }
+}
 
 #splash-text-span-one{
    
