@@ -1,4 +1,5 @@
 {
+  "homepage": "https://tanmaydaga.github.io/Portfolio/",
   "name": "vite-template-solid",
   "version": "0.0.0",
   "description": "",
@@ -7,10 +8,13 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "typescript": "^5.8.2",
     "vite": "^6.2.1",
     "vite-plugin-solid": "^2.11.6"
