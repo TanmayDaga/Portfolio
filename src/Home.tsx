@@ -58,12 +58,7 @@ export default function Home() {
               >
                 View Projects
               </Button>
-              <Button 
-                variant="outlined"
-                class="!border-teal-600 !text-teal-600 hover:!bg-teal-50 dark:hover:!bg-teal-900/30 normal-case !rounded-md"
-              >
-                Contact Me
-              </Button>
+     
             </div>
           </Motion.div>
 
