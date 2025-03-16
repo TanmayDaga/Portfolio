@@ -12,5 +12,5 @@ export default defineConfig({
     target: 'esnext',
     cssMinify: 'lightningcss',
   },
-  base: '/portfolio/'
+
 });
