@@ -1,8 +1,10 @@
 import { createSignal, type Component } from "solid-js";
 import SplashScreen from "./components/SplashScreen";
 import ScrollContainer from "./components/ScrollContainer";
+import Navigation from "./components/Navigation";
 import Home from "./Home";
 import Projects from "./Projects";
+import Experience from "./Experience";
 
 const App: Component = () => {
   const [isLoading, setIsLoading] = createSignal(false);
@@ -19,8 +21,10 @@ const App: Component = () => {
         `}
       </style>
       <SplashScreen isLoading={isLoading} />
+      <Navigation />
       <ScrollContainer>
         <Home />
+        <Experience />
         <Projects />
       </ScrollContainer>
     </div>
