@@ -33,7 +33,23 @@ export const projects: Project[] = [
       "https://github.com/TanmayDaga/Portfolio/blob/version-3/src/assets/projects/webd/pyadav/img3.png?raw=true"
     ]
   },
-
+  {
+    title: "InstiApp Backend",
+    image: "",
+    description: "A large-scale modular Spring Boot backend for IIT Jodhpur’s institutional platform integrating OAuth2 authentication, JWT-based authorization, Cloudinary media handling, AWS S3 storage, and PostgreSQL persistence. Features 20+ services, 40+ repositories, 15+ controllers, async task execution, and Dockerized deployment with multi-environment configuration.",
+    githubLink: "https://github.com/TanmayDaga/InstiApp-Backend",
+    techStack: [
+      { icon: faJava, name: "Java" },
+      { icon: faLeaf, name: "Spring Boot" },
+      { icon: faDatabase, name: "PostgreSQL" },
+      { icon: faAws, name: "AWS S3" },
+      { icon: faCloud, name: "Cloudinary" },
+      { icon: faDocker, name: "Docker" }
+    ],
+    featured: true,
+    category: "Backend Development",
+    screenshots: []
+  },
   {
     title: "Spacekart",
     image: "https://github.com/TanmayDaga/Portfolio/blob/version-3/src/assets/projects/webd/spacekart/img2.png?raw=true",
